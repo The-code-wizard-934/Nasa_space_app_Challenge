@@ -66,7 +66,7 @@ const GraphLegend = ({ isVisible, onToggle }) => {
   }
 
   return (
-    <div className="fixed top-20 left-4 z-20 w-72 bg-card border border-border rounded-lg shadow-floating">
+    <div className="fixed top-20 left-4 z-50 w-72 bg-black border border-border rounded-lg shadow-floating">
       <div className="flex items-center justify-between p-4 border-b border-border">
         <h3 className="text-lg font-heading font-semibold text-foreground">
           Graph Legend

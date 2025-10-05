@@ -20,7 +20,7 @@ const SearchBar = ({ onSearch, className = "" }) => {
   };
 
   const handleAIChat = () => {
-    navigate("/ai-chatbot-interface");
+    window.open("https://nasa-hackathon-rag.vercel.app/", "_blank", "noopener,noreferrer");
   };
 
   const suggestedQueries = [

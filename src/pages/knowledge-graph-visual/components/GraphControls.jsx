@@ -76,7 +76,7 @@ const GraphControls = ({
   }
 
   return (
-    <div className="fixed top-20 right-4 z-20 w-80 bg-card border border-border rounded-lg shadow-floating max-h-[calc(100vh-6rem)] overflow-y-auto scrollbar-cosmic">
+    <div className="fixed top-20 right-4 z-20 w-80 bg-black border border-border rounded-lg shadow-floating max-h-[calc(100vh-6rem)] overflow-y-auto scrollbar-cosmic">
       <div className="flex items-center justify-between p-4 border-b border-border">
         <h3 className="text-lg font-heading font-semibold text-foreground">
           Graph Controls

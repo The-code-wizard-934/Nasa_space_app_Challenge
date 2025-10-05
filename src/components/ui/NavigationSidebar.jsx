@@ -16,7 +16,7 @@ const NavigationSidebar = ({ isCollapsed = false, onToggle }) => {
     },
     {
       label: "AI Assistant",
-      path: "/ai-chatbot-interface",
+      path: "https://nasa-hackathon-rag.vercel.app/",
       icon: "Bot",
       tooltip: "Natural language querying with conversational memory",
     },
@@ -47,8 +47,15 @@ const NavigationSidebar = ({ isCollapsed = false, onToggle }) => {
   ];
 
   const handleNavigation = (path) => {
-    navigate(path);
-    setIsMobileOpen(false);
+    if (!path) return;
+  
+    if (path.startsWith("http")) {
+      // External link → open in new tab
+      window.open(path, "_blank", "noopener,noreferrer");
+    } else {
+      // Internal link → navigate inside app
+      navigate(path); // useNavigate() from react-router-dom
+    }
   };
 
   const toggleMobile = () => {
